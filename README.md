@@ -10,6 +10,6 @@ main goal:
 
 
 #School Name: Gurukul
-logo: anything resembling gurukul (find logo)
-pictures: (find pictures)
-contents: writing passage(find pictures) 
+1. logo: anything resembling gurukul (find logo)
+2. pictures: (find pictures)
+3. contents: writing passage(find pictures) 
