@@ -13,3 +13,4 @@ main goal:
 1. logo: anything resembling gurukul (find logo)
 2. pictures: (find pictures)
 3. contents: writing passage(find contents) 
+kodjbpoomb l
