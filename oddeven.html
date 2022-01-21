@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h2 style="text-align:center;"> The Number is Even Or Odd</h2>
+	<label> Enter Number </label> <br/>
+	<input type="Number" name=" " id="oddeven" omkeyup="isCheck()"><span id="showmsg"></span>
+	
+<script type="text/javascript">
+
+function isCheck()
+{
+	var num = document.getElementById('oddeven').value;
+	//alert(num);
+	if((num % 2) == 0)
+	{
+		document.getElementById('showmsg').innerHTML = "Hurray! Number " +num+" is an even number"
+	}
+	
+	else
+	{
+		document.getElementById('showmsg').innerHTML = "oh! Number " +num+" is an odd number"
+	}
+}
+</script>
+</body>
+</html>
