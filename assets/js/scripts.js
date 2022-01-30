@@ -1,8 +1,3 @@
-$("header").load("/include/header.html");
-$(".reposive-menu").load("/include/resposive-menu.htmll");
-
-$("footer").load("../../include/footer.html");
-
 
 
 ( function ( $ ) {
