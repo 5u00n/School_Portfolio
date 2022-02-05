@@ -95,23 +95,7 @@
         /**
          * Responsive Mobile Menu
          */
-        $(".menu-btn").on("click", function() {
 
-            $(this).toggleClass("active");
-            $(".responsive-menu").toggleClass("active");
-            $("body").toggleClass("scroll-hide");
-
-        });
-
-        $(".responsive-menu ul ul").parent().addClass("menu-item-has-children");
-        $(".responsive-menu ul li.menu-item-has-children > a").on("click", function() {
-
-            $(this).parent().toggleClass("active").siblings().removeClass("active");
-            $(this).next("ul").slideToggle();
-            $(this).parent().siblings().find("ul").slideUp();
-            return false;
-
-        } );
 
         /**
          * AJAX Contact Form Script

@@ -1,13 +1,18 @@
+"use strict";
+
 $(document).ready(function () {
     $("header").css("height","191px");
     $("footer").css("height","231px");
     hide();
     $("header").load("/include/header.html");
-    $(".reposive-menu").load("/include/resposive-menu.htmll");
+    $(".responsive-menu").load("/include/resposive-menu.html");
 
     $("footer").load("../../include/footer.html");
     unhide();
-})
+
+    //console.log("button clicked");
+   
+});
 
 
 
