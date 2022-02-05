@@ -12,6 +12,21 @@ $(document).ready(function () {
 
     //console.log("button clicked");
    
+
+
+    var url = window.location.href+"#";
+
+    // passes on every "a" tag
+    $("nav a").each(function() {
+        
+        // checks if its the same on the address bar
+        if (url == (this.href)) {
+          //  console.log(this.href+" : "+url);
+            $(this).closest("a").addClass("active");
+            //for making parent of submenu active
+           $(this).closest("a").parent().parent().addClass("active");
+        }
+    });
 });
 
 

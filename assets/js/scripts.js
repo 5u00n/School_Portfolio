@@ -92,10 +92,7 @@
 
         });
 
-        /**
-         * Responsive Mobile Menu
-         */
-
+   
 
         /**
          * AJAX Contact Form Script

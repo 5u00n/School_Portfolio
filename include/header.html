@@ -2,9 +2,10 @@
     <div class="header-content d-flex flex-wrap align-items-center">
         <div class="logo">
             <a href="index.html" title="">
-                <img src="assets/img/logo.png" alt="" srcset="assets/img/01_Logo_2x.png 2x"> 
+                <img src="assets/img/logo.png" alt="" srcset="assets/img/01_Logo_2x.png 2x">
             </a>
-        </div><!--logo end-->
+        </div>
+        <!--logo end-->
         <ul class="contact-add d-flex flex-wrap">
             <li>
                 <div class="contact-info">
@@ -13,7 +14,8 @@
                         <h4>Call</h4>
                         <span>+91 89374 03478</span>
                     </div>
-                </div><!--contact-info end-->
+                </div>
+                <!--contact-info end-->
             </li>
             <li>
                 <div class="contact-info">
@@ -22,7 +24,8 @@
                         <h4>Work Time</h4>
                         <span>Mon - Fri 8 AM - 5 PM</span>
                     </div>
-                </div><!--contact-info end-->
+                </div>
+                <!--contact-info end-->
             </li>
             <li>
                 <div class="contact-info">
@@ -31,72 +34,84 @@
                         <h4>Address</h4>
                         <span>Kotrud, Pune</span>
                     </div>
-                </div><!--contact-info end-->
+                </div>
+                <!--contact-info end-->
             </li>
-        </ul><!--contact-information end-->
+        </ul>
+        <!--contact-information end-->
         <div class="menu-btn">
             <a href="#">
                 <span class="bar1"></span>
                 <span class="bar2"></span>
                 <span class="bar3"></span>
             </a>
-        </div><!--menu-btn end-->
-    </div><!--header-content end-->
+        </div>
+        <!--menu-btn end-->
+    </div>
+    <!--header-content end-->
     <div class="navigation-bar d-flex flex-wrap align-items-center">
         <nav>
-            <ul>
-                <li><a class="active" href="index.html" title="">Home</a></li>
+            <ul class="top-nav">
+                <li><a href="index.html" title="">Home</a></li>
                 <li><a href="about.html" title="">About</a>
                     <ul>
                         <li><a href="events.html" title="">Events</a>
-                            <ul>
-                                <li><a href="event-single.html" title="">Event Single</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="schedule.html" title="">Schedule</a></li>
-                        <li><a href="error.html" title="">404</a></li>
                     </ul>
                 </li>
-                <li><a href="classes.html" title="">Classes</a>
-                    <ul>
-                        <li><a href="class-single.html" title="">Class Single</a></li>
-                    </ul>
+                <li><a href="classes.html" title="" class="">Classes</a>
                 </li>
                 <li><a href="teachers.html" title="">Teachers</a>
-                    <ul>
-                        <li><a href="teacher-single.html" title="">Teacher Single</a></li>
-                    </ul>
+
                 </li>
                 <li><a href="contacts.html" title="">Contacts</a></li>
             </ul>
-        </nav><!--nav end-->
+        </nav>
+        <!--nav end-->
         <ul class="social-links ml-auto">
             <li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#" title=""><i class="fab fa-linkedin-in"></i></a></li>
             <li><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
         </ul>
-    </div><!--navigation-bar end-->
+    </div>
+    <!--navigation-bar end-->
 </div>
 
 
 <script>
-    $(".menu-btn").on("click", function() {
 
-console.log("button clicked");
+    $(document).ready(function(){
+    $(".menu-btn").on("click", function () {
 
-   $(this).toggleClass("active");
-   $(".responsive-menu").toggleClass("active");
-   $("body").toggleClass("scroll-hide");
+        console.log("button clicked");
 
+        $(this).toggleClass("active");
+        $(".responsive-menu").toggleClass("active");
+        $("body").toggleClass("scroll-hide");
+
+    });
+
+    $(".responsive-menu ul ul").parent().addClass("menu-item-has-children");
+    $(".responsive-menu ul li.menu-item-has-children > a").on("click", function () {
+
+        $(this).parent().toggleClass("active").siblings().removeClass("active");
+        $(this).next("ul").slideToggle();
+        $(this).parent().siblings().find("ul").slideUp();
+        return false;
+
+    });
+
+
+    var url = window.location.href;
+
+    // passes on every "a" tag
+    $(".top-nav a").each(function () {
+       // console.log(this.href);
+        // checks if its the same on the address bar
+        if (url == (this.href)) {
+            $(this).addClass("active");
+            //for making parent of submenu active
+            $(this).parent().parent().addClass("active");
+        }
+    });
 });
-
-$(".responsive-menu ul ul").parent().addClass("menu-item-has-children");
-$(".responsive-menu ul li.menu-item-has-children > a").on("click", function() {
-
-   $(this).parent().toggleClass("active").siblings().removeClass("active");
-   $(this).next("ul").slideToggle();
-   $(this).parent().siblings().find("ul").slideUp();
-   return false;
-
-} );
 </script>
