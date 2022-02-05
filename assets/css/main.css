@@ -1112,7 +1112,7 @@ footer .bottom-footer .social-links {
     padding: 75px 0 85px;
 }
 .pager-section.blog-version {
-    background-image: url(https://via.placeholder.com/1340x894);
+    background-image: url(assets/img/1340x894);
     padding: 169px 0 242px;
     position: relative;
     background-position: 50%;
@@ -1290,7 +1290,7 @@ footer .bottom-footer .social-links {
     padding: 140px 0;
 }
 .classes-page .classes-banner {
-    background-image: url(https://via.placeholder.com/1680x1120);
+    background-image: url(assets/img/1680x1120);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
