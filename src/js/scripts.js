@@ -1,6 +1,6 @@
 /**
- * Shelly HTML Template
- * Shelly School HTML Template has been specially designed with your learning community in mind.
+ * Wonder HTML 
+ * Wonder School HTML  has been specially designed with your learning community in mind.
  * Exclusively on https://1.envato.market/tf-merkulove
  *
  * @encoding        UTF-8
