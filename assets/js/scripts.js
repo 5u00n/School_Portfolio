@@ -66,18 +66,7 @@
 
         });
 
-        // Blog carouse - blog.html
-        $('.blog-carousel').slick({
 
-            slidesToShow: 1,
-            infinite:true,
-            slidesToScroll: 1,
-            autoplay: true,
-            dots: false,
-            arrows:true,
-            autoplaySpeed: 2000
-
-        });
 
         // Classes carousel in the sidebar - class-single.html
         $('.classes-section-sidebar').slick({
